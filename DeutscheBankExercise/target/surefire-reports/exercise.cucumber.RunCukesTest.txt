@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: exercise.cucumber.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 0.728 sec <<< FAILURE!
+Given the user uploads an invalid file(Scenario: User uploads a file with incorrect data)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: The value of 'invalid' may have been entered in the incorrect format.
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
+	at exercise.pages.Transaction.validateAmount(Transaction.java:47)
+	at exercise.pages.Transaction.<init>(Transaction.java:39)
+	at exercise.pages.ETLPage.cvsParser(ETLPage.java:141)
+	at exercise.pages.ETLPage.parseFile(ETLPage.java:82)
+	at exercise.pages.ETLPage.upload(ETLPage.java:31)
+	at exercise.stepdefinitions.ETLStepDef.the_user_is_uploads_an_invalid_file(ETLStepDef.java:21)
+	at ✽.Given the user uploads an invalid file(etl_invalid_amount.feature:7)
+
+Scenario: User uploads a file with incorrect data  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError: The value of 'invalid' may have been entered in the incorrect format.
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:26)
+	at exercise.pages.Transaction.validateAmount(Transaction.java:47)
+	at exercise.pages.Transaction.<init>(Transaction.java:39)
+	at exercise.pages.ETLPage.cvsParser(ETLPage.java:141)
+	at exercise.pages.ETLPage.parseFile(ETLPage.java:82)
+	at exercise.pages.ETLPage.upload(ETLPage.java:31)
+	at exercise.stepdefinitions.ETLStepDef.the_user_is_uploads_an_invalid_file(ETLStepDef.java:21)
+	at ✽.Given the user uploads an invalid file(etl_invalid_amount.feature:7)
+

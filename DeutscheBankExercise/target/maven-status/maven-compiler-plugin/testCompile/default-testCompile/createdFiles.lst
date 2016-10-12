@@ -1,0 +1,4 @@
+exercise/cucumber/RunCukesTest.class
+exercise/pages/ETLPage.class
+exercise/stepdefinitions/ETLStepDef.class
+exercise/pages/Transaction.class
